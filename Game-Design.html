@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="Js/GameDesign.js"></script>
+</head>
+
+<body onresize="resize()">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#"> <i  class="fas fa-gamepad ml-2"></i> Game-Design</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('index.html')"><i
+                            class="fas fa-home">Home</i></button>
+                </li>
+
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Tools.html')"><i
+                            class="fas fa-tools"> Tools</i></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Techniken.html')"><i
+                            class="fas fa-toolbox"> Techniken</i></button>
+
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Game-Design.html')"><i
+                            class="fas fa-gamepad"></i> Game-Design</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-center bg-info text-light mb-0 ">
+        <div class="ueberschrift content2">
+            <h1>Game Design</h1>
+        </div>
+    </div>
+
+    <div class="content1">
+        <div class="container col-10 element02 text-center mt-3">
+            <p class="text-body">
+                Game Design ist der Prozess des Planens und entwerfen des Spiels.
+                Beim Game Design wird entschieden ob das Spiel Spaß macht oder nicht.
+                <br><br>
+            </p>
+            <p class="text-body">
+                Beim Game Designen werden die Mechaniken entworfen wie zb. bei Mario, dass man durch die Welt springt um
+                zum
+                Zeil zu kommen
+                <br><br>
+            </p>
+            <p class="text-body">
+                Game Design hat ein absolut riesiges spektrum an Aufgaben zb. muss der Game Designer Beachten das das
+                Spiel
+                schwer ist, aber nicht zu schwer. Der Game Designer
+                muss aufpassen das die Spiel Mechaniken an die Zielgruppe entsprechend angepasst sind ...
+            </p>
+        </div>
+
+        <div class="container col-5 element02 text-center pt-1 pb-1 mt-5">
+            <h3>GUTES VS SCHLECHTES Game-Design</h3>
+        </div>
+
+        <div class="container-fluid container mt-4 mb-4">
+            <div class="row mr-4 ml-4">
+                <div class="container col-md-5 element02">
+                    <div class="gutPage1">
+                        <div class="container element01 scaleonHover" onclick="changePage('.gutPage5')">
+                            <img src="imgs/Game-Design/SMB_Cover.jpg" alt="super mario bros bild"
+                                class="img-fluid rounded-lg ">
+                        </div>
+
+                        <div class="container element01 scaleonHover" onclick="changePage('.gutPage2')">
+                            <p class="text-body">
+                                Grundsätzliche Game Mechaniken
+                            </p>
+                        </div>
+
+                        <div class="container element01 scaleonHover" onclick="changePage('.gutPage3')">
+                            <p class="text-body">
+                                Tutorial
+                            </p>
+                        </div>
+
+                        <div class="container element01 scaleonHover " onclick="changePage('.gutPage4')">
+                            <p class="text-body">
+                                Generelles Game-Design
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gutPage2">
+                        <div class="container element01 scaleonHover" onclick="changePage('.gutPage1')">
+                            <p class="text-body">
+                                <i class="fas fa-arrow-left"></i> Zurück zu den überschriften
+                            </p>
+                        </div>
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Es war darmal revolutionär ein Jump and Run zu spielen. Es war völlig neu. Niemand hat
+                                davor ein solches
+                                gespielt bzw. schon gar nicht zuhause. Der Schwierigkeits grad war Perfekt gewählt es war
+                                für jeden Spielbar(wenn es es unbedingt wollte)
+                            </p>
+                        </div>
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Bei Game-Design geht es um mehr als nur die Mechaniken zu entwerfen mann muss etwas
+                                neues machen, etwas aufregendes und vorallem etwas was die Spieler spielen wollen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gutPage4">
+                        <div class="container element01 scaleonHover" onclick="changePage('.gutPage1')">
+                            <p class="text-body">
+                                <i class="fas fa-arrow-left"></i> Zurück zu den überschriften
+                            </p>
+                        </div>
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Die Level sind gut gestaltet.
+                                Sie sind abwechslungsreich und vorallem gut schaffbar.
+                                Die Level sind ein Beispiel für gutes Level-Design.
+                            </p>
+
+                        </div>
+
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Der Sound des Spiels ist absolut passend gewählt. Es fühlt sich an als gehöre alles zu
+                                einander, einfach gut.
+                                Außerdem ist der Soundtrek des ersten Levels absolut fantastisch und Legendär.
+                            </p>
+                        </div>
+
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Der Art-Style ist auch teil des Level-Designs, welches hier absolut ge glückt ist. Man
+                                hat hier nie versuch realismus rein zu bringen,in Form von normalen Farben. Was gut ist,
+                                da das Spiel nicht realistisch sein kann, es ist auf einer 8bit Konsole gelaufen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="gutPage3">
+                        <div class="container element01 scaleonHover" onclick="changePage('.gutPage1')">
+                            <p class="text-body">
+                                <i class="fas fa-arrow-left"></i> Zurück zu den überschriften
+                            </p>
+                        </div>
+
+                        <div class="container element01 scaleonHover" onclick="changePage('.gutPage1')">
+                            <iframe id = "video01"  src="https://www.youtube.com/embed/ZH2wGpEZVgE"
+                                allowfullscreen></iframe>
+                        </div>
+
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Im obrigen Video wird das Level-Design des Erste Levels bzw. des Tutorial genau erklärt
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="gutPage5">
+                        <div class="container element01 scaleonHover" onclick="changePage('.gutPage1')">
+                            <p class="text-body">
+                                <i class="fas fa-arrow-left"></i> Zurück zu den überschriften
+                            </p>
+                        </div>
+
+                        <div class="container element01 scaleonHover"
+                            onclick="linkOeffnen('https:\\de.wikipedia.org/wiki/Super_Mario_Bros.')">
+                            <img src="imgs/Game-Design/SMB_Gameplay.jpg" alt="super mario bros bild"
+                                class="img-fluid rounded-lg ">
+                        </div>
+
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Super Mario Bros war eines der Launch titel des NES (die erste erfolgreiche konsole von
+                                Nintendo).
+                                <br>
+                                Das Spiel überzeugte mit fantastischen level, sound Design. Außerdem war die Idee des
+                                Platformers damals neu
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container col-md-1">
+                    <div class="Linie"></div>
+                </div>
+
+                <div class="container col-md-5 element02">
+                    <div class="schlechtPage1">
+                        <div class="container element01 scaleonHover ">
+                            <img src="imgs/Game-Design/paperMarioColorSpalsh.jpg" alt="papermario origamie King bild"
+                                class="img-fluid rounded-lg " onclick="changePage2('.schlechtPage5')">
+                        </div>
+
+                        <div class="container element01 scaleonHover " onclick="changePage2('.schlechtPage2')">
+                            <p class=" text-body">
+                                Kampfsystem
+                            </p>
+                        </div>
+
+                        <div class="container element01 scaleonHover " onclick="changePage2('.schlechtPage3')">
+                            <p class=" text-body">
+                                schwierigkeitsgrad
+                            </p>
+                        </div>
+
+                        <div class="container element01 scaleonHover " onclick="changePage2('.schlechtPage4')">
+                            <p class="text-body">
+                                Ignorieren der Community
+                            </p>
+                        </div>
+                    </div>
+                    <div class="schlechtPage2">
+                        <div class="container element01 scaleonHover" onclick="changePage2('.schlechtPage1')">
+                            <p class="text-body">
+                                <i class="fas fa-arrow-left"></i> Zurück zu den überschriften
+                            </p>
+                        </div>
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Das KampfSystem ist ein perfektes Beispiel für schlechtes Game-Design. In PMTOK( Paper
+                                Mario the Origami King) gibt es ein Kampfsystem welches rundenbasiert ist.
+                                In diesem muss man seinen Gegnern schaden machen um sie zu besiegen. Die Gegner befinden
+                                sich auf kreisen um den Spieler.
+                                Das schlachte Game-Design ist das man diese, also die Kreise und Gegner, vor jedem Kampf
+                                sortieren muss. Ob das prinzip jetzt gut oder schlecht ist kann man diskutieren.
+                                Was allerdings schlecht ist, ist, dass man das vor jedem Kampf machen muss und die
+                                Gegner respawnen das bedeutet jedesmal wenn man von einem zum anderen Ort geht muss man
+                                dieses
+                                Rät­zel machen, und die Rät­zel sind nicht schwer nur Zeitaufwendig, man muss sie einfach
+                                zu oft machen was frustriert und keinen Spaß macht.
+                            </p>
+                        </div>
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Ein Teil von Game-Design ist es dem Spieler nicht das gefühl zu geben etwas wäre unfair
+                                oder einfach nur unnötig, was leider beu MPTOK nicht geschafft wird.
+                                bei den Kämpden muss man dieses Rät­zel vor jedem Kampf lösen und man erhält dafür fast
+                                nichts, dies gibt einem genau dieses Gefühl.
+                            </p>
+                        </div>
+
+
+
+                    </div>
+                    <div class="schlechtPage3">
+                        <div class="container element01 scaleonHover" onclick="changePage2('.schlechtPage1')">
+                            <p class="text-body">
+                                <i class="fas fa-arrow-left"></i> Zurück zu den überschriften
+                            </p>
+                        </div>
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Der schwierigkeitsgrad ist schlecht gewählt. Der schwierigkeitsgrad für ein Paper Mario
+                                also zumindest bei den älteren war immer ein bischen höher, leider
+                                wurde in diesem Spiel auf diese Tradition vergessen.<br>
+                                Das Spiel ist zu leicht es gibt sehr sehr wenige Herausforderungen.
+                                Das Spiel hätte sich an seine Hauptzielgruppe lehnen sollen, nicht an kleinkinder.
+                                Das ist einfach nicht die Zielgruppe. Kleinkinder können nicht lesen also ist das Spiel
+                                ech nichts für sie.
+                                Ältere Personen wollen nicht nur dumm durch die Welt laufen und alles beim ersten
+                                versuch schaffen, man will eine Herausforderungen.
+                            </p>
+                        </div>
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Ein Teil von Game-Design ist es den schwierigkeitsgrad des Spielsd festzulegen, das
+                                Spiel zu balancen. Es nicht zu leicht oder zu schwer machen.
+                                Hier ist es ganz klar zu leicht.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="schlechtPage4">
+                        <div class="container element01 scaleonHover" onclick="changePage2('.schlechtPage1')">
+                            <p class="text-body">
+                                <i class="fas fa-arrow-left"></i> Zurück zu den überschriften
+                            </p>
+                        </div>
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Ein Spiel wie Paper Mario lebt sehr von seinen Fans, welche das Genre schon sehr lange
+                                hat. In den letzten Spielen der Reihe wurde bereits bemängelt,
+                                dass es wieder ein Level System und Order geben sollte und, dass das alte Kampfsystem
+                                wieder eingeführt werden sollte. <br>Die Entwickler allerdings haben dies einfach
+                                ignoriert.
+                            </p>
+                        </div>
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Ein Teil von Game-Design ist es den Spielern das Spiel zu liefern, welches sie wollen.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="schlechtPage5">
+
+                        <div class="container element01 scaleonHover" onclick="changePage2('.schlechtPage1')">
+                            <p class="text-body">
+                                <i class="fas fa-arrow-left"></i> Zurück zu den überschriften
+                            </p>
+                        </div>
+
+                        <div class="container element01 scaleonHover"
+                            onclick="linkOeffnen('https:\\de.wikipedia.org/wiki/Paper_Mario:_The_Origami_King')">
+                            <img src="imgs/Game-Design/PaperMarioOriKingGAmeplay.jpg" alt="super mario bros bild"
+                                class="img-fluid rounded-lg ">
+                        </div>
+
+                        <div class="container element01 ">
+                            <p class="text-body">
+                                Paper Mario ist eine Video Spiel reihe, von Nintendo. Zu seinen Beginn zeiten waren die Spiele der Reihe RPGs, allerdings
+                                hat das sich im laufe der Zeit geändert.<br>
+                                Paper Mario the Origami King ist der neuste Ableger der Reihe.
+                                <br>
+                                Das Spiel hat auch gute Aspekte allerdings betrachte ich hier nur die schlechten, trotzdem schlechten Mechaniken muss 
+                                ich zugeben das mir das Spiel trotzdem gefallen hat, dies aber auch nur da ich ein fanboy der reihe bin.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="jumbotron jumbotron-fluid text-center bg-info text-light mt-5 mb-0 pt-4 pb-4">
+            <div class="row">
+                <div class=" col-sm-6 container rounded-lg text-white">
+                    <h4 class=""><i class="fas fa-copyright"></i> 2020 Fischer</h4>
+                </div>
+                <div class=" col-sm-6 container rounded-lg text-white ">
+                     <h4 class = "scaleonHover" onclick="uebergang('Contact.html')">Contact me</h4>
+                </div>
+    
+            </div>
+        </div>
+    
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="Js/SeitenUebergang.js"></script>
+    
+</body>
+
+</html>

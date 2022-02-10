@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Js/Contact.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    
+    <link rel="stylesheet" href="css/Style.css">
+    <script src="Js/GameDesign.js"></script>
+</head>
+
+<body onresize="resize()">
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#"><i class="fas fa-comment-dots pl-3"></i> Contact</a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('index.html')"><i
+                            class="fas fa-home">Home</i></button>
+                </li>
+
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Tools.html')"><i
+                            class="fas fa-tools"> Tools</i></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Techniken.html')"><i
+                            class="fas fa-toolbox"> Techniken</i></button>
+
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Game-Design.html')"><i
+                            class="fas fa-gamepad"></i> Game-Design</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-center bg-info text-light mb-0 ">
+        <div class="ueberschrift content2">
+            <h1>Contact</h1>
+        </div>
+    </div>
+
+    <div class=" container element01 mt-5 mb-5 content1">
+            <div class="form-group">
+                <label>Betreff:</label>
+                <input type="text" placeholder = "zb. Bug report" class ="form-control" id="Betreff">
+            </div>
+            <div class="form-group">
+                <label >Nachricht:</label>
+                <textarea class="form-control" rows="10" id="text" placeholder="hier Nachricht"></textarea>
+            </div>
+
+            <button type="button" class="btn rounded btn-dark" onclick="emailClientoeffnen()">mit E-mail Client öffnen</button>
+    </div>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="Js/SeitenUebergang.js"></script>
+
+</body>
+
+</html>

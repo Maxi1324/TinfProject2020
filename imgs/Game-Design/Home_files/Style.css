@@ -1,0 +1,125 @@
+p {
+    font-size: 20px;
+    color: white;
+    margin: 5px;
+}
+
+.list-group-item {
+    display: list-item;
+    background-color: rgba(255, 255, 255, 0);
+    color: white;
+    border-color: white;
+}
+
+.list-group {
+    list-style: decimal inside;
+}
+
+ss a:hover {
+    color: rgb(143, 143, 143)1
+}
+
+.width100Pro {
+    width: 100%;
+}
+
+#InverseDemo {
+    width: 960px;
+    height: 600px
+}
+
+.bg-dark {
+    background-color: black !important;
+}
+
+.bg-secondary {
+    background-color: rgb(36, 36, 36) !important;
+}
+
+.bg-info {
+    background-color: rgb(0, 40, 58) !important;
+}
+
+body {
+    color: white;
+    background-color: rgb(36, 36, 36) !important;
+}
+
+.btn {
+    background-color: white;
+    margin: 0px;
+    margin-left: 5px;
+    border-radius: 0px;
+    width: 100%;
+    border-style: solid;
+    border-color: rgb(226, 226, 226);
+    border-width: 0.01px;
+}
+
+.navbar-collapse, .navbar {
+    padding: 0px;
+}
+
+#navueber {
+    padding-left: 20px;
+}
+
+.card {
+    padding: 10px;
+}
+
+.cd {
+    color: black !important;
+}
+
+.cardi {
+    padding: 10px;
+}
+
+.btn {
+    background-color: black;
+    border-color: rgb(48, 48, 48);
+}
+
+.btn:hover {
+    border-color: rgb(255, 255, 255);
+}
+
+.Linie {
+    display: block;
+    border-style: solid;
+    border-width: 0px;
+    border-right-width: 5px;
+    border-color: rgba(255, 255, 255, 0.418);
+    border-radius: 100px;
+    height: 100px;
+    width: 0px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.element01 {
+    background-color: rgba(255, 255, 255, 0.603);
+    color: black !important;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.438);
+    border-style: solid;
+    border-radius: 20px;
+    margin-top: 10px;
+    padding: 10px;
+}
+
+.element01:hover {
+    transform: scale(1.025);
+}
+
+.element02 {
+    background-color: rgba(255, 255, 255, 0.795);
+    color: black;
+    border-width: 3px;
+    border-color: rgba(0, 0, 0, 0.699);
+    border-style: solid;
+    border-radius: 10px;
+    padding: 10px;
+    padding-top: 0px;
+}s

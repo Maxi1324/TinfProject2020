@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/Game-Design.html -->
+<html lang="de"><link type="text/css" rel="stylesheet" id="dark-mode-general-link"><link type="text/css" rel="stylesheet" id="dark-mode-custom-link"><style lang="en" type="text/css" id="dark-mode-custom-style"></style><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="./Home_files/bootstrap.min.css">
+    <script src="./Home_files/jquery.min.js.Download"></script>
+    <script src="./Home_files/popper.min.js.Download"></script>
+    <script src="./Home_files/bootstrap.min.js.Download"></script>
+
+    <link rel="stylesheet" href="./Home_files/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script src="./Home_files/UnityProgress.js.Download"></script>
+    <script src="./Home_files/UnityLoader.js.Download"></script>
+
+    <link rel="stylesheet" href="./Home_files/Style.css">
+
+
+
+
+
+    <link rel="stylesheet" href="./Home_files/Style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="http://127.0.0.1:5500/Game-Design.html#"> <i class="fas fa-home">Home</i> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang(&#39;index.html&#39;)"><i class="fas fa-home">Home</i></button>
+                </li>
+
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang(&#39;Tools.html&#39;)"><i class="fas fa-tools"> Tools</i></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang(&#39;Techniken.html&#39;)"><i class="fas fa-toolbox"> Techniken</i></button>
+
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang(&#39;Game-Design.html&#39;)"><i class="fas fa-gamepad"></i> Game-Design</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="jumbotron jumbotron-fluid text-center bg-info text-light mb-0 ">
+        <div class="ueberschrift content2" style="transform: translate(0%, 0px);">
+            <h1>Game Design</h1>
+        </div>
+    </div>
+
+    <div class="container col-10 element02 text-center mt-3">
+        <p class="text-body">
+            Game Design ist der Prozess des Planens und entwerfen des Spiels.
+            Beim Game Design wird entschieden ob das Spiel Spaß macht oder nicht.
+            <br><br>
+        </p>
+        <p class="text-body">
+            Beim Game Designen werden die Mechaniken entworfen wie zb. bei Mario, dass man durch die Welt springt um zum Zeil zu kommen
+            <br><br>
+        </p>
+        <p class="text-body">
+            Game Design hat ein absolut rießiges spektrum an Aufgaben zb. muss der Game Designer Beachten das das Spiel schwer ist, aber nicht zu schwer. Der Game Designer
+            muss aufpassen das die Spiel Mechankiken an die Zielgruppe entsprechend angepasst sind ...
+        </p>
+    </div>
+
+    <div class="container col-5 element02 text-center pt-1 pb-1 mt-5">
+        <h3>GUTES VS SCHLECHTES Game-Design</h3>
+    </div>
+
+    <div class="container-fluid mt-4 mb-4">
+        <div class="row mr-4 ml-4">
+            <div class="container col-5 element02">
+                <div class="container element01 ">
+                    <img src="./Home_files/SMB_Cover.jpg" alt="super mario bros bild" class="img-fluid rounded-lg ">
+                </div>
+
+                <div class="container element01 ">
+                   
+                </div>
+            </div>
+
+            <div class="container col-1">
+                <div class="Linie"></div>
+            </div>
+
+            <div class="container col-5 element02">
+                
+                    Gund sätzliche Gamemechanik
+            
+            </div>
+
+
+        </div>
+    </div>
+
+    <div class=" jumbotron jumbotron-fluid text-center bg-info text-light mb-0 pt-4 pb-4">
+        <h4>copyright 2020 Fischer</h4><h4>
+    </h4></div>
+
+    <script src="./Home_files/gsap.min.js.Download"></script>
+    <script src="./Home_files/SeitenUebergang.js.Download"></script>
+    
+<!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

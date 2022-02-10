@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <script src="OpenGl/InverseDemo/TemplateData/UnityProgress.js"></script>
+    <script src="OpenGl/InverseDemo/Build/UnityLoader.js"></script>
+    <script>
+        var unityInstance = UnityLoader.instantiate("unityContainer", "OpenGl/InverseDemo/Build/InverseDemo.json", { onProgress: UnityProgress });
+    </script>
+
+
+
+
+
+    <link rel="stylesheet" href="css/Style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+        <a class="navbar-brand" href="#"> <i class="fas fa-toolbox ml-2"> Techniken</i> </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('index.html')"><i
+                            class="fas fa-home">Home</i></button>
+                </li>
+
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Tools.html')"><i
+                            class="fas fa-tools"> Tools</i></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Techniken.html')"><i
+                            class="fas fa-toolbox"> Techniken</i></button>
+
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Game-Design.html')"><i
+                            class="fas fa-gamepad"></i> Game-Design</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid text-center bg-info text-light mb-0 ">
+        <div class="ueberschrift content2">
+            <h1>Techniken der Spieleentwicklung</h1>
+        </div>
+    </div>
+
+    <div class="content1">
+        <div class="container-fluid-center bg-secondary m-0 p-4 ">
+            <div class="row mr-4 ml-4">
+                <div class="col-sm-4 rounded bg-dark text-white p-1">
+                    <div class="container p-0">
+                        <div class="list-group">
+                            <a href="#3DModelle" class="list-group-item">3D Modelle</a>
+                            <a href="#Animationen" class="list-group-item"> Animation</a>
+                            <a href="#Knochen" class="list-group-item">Rigging</a>
+                            <a href="#Inverse" class="list-group-item">Inverse Kinematiks</a>
+                            <a href="#Beispiel" class="list-group-item">Inverse Kinematiks Beispiele</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-sm-1">
+                </div>
+
+                <div class="col-sm-7 rounded bg-dark text-white">
+                    <p>
+                        Auf dieser Seite wird erläutert was für Techniken in des Spiele Entwicklung genutzt werden.
+                        Die Techniken betreffen auf dieser Seite hauptsächlich die Grafik der Spiele, also wie diese
+                        teilweise erstellt wird.
+                        <br>
+                        <br>
+                        Als Sahnehäuptchen wird auf dieser Seite eine Livedemo zu Inverse Kinematiks bereit gestellt,
+                        weitere Informationen unten.
+                    </p>
+                </div>
+
+            </div>
+
+            <div class="container-fluid-md mt-4  ">
+                <div class="container" id="3DModelle">
+                    <h4 class="bg-dark rounded text-center text-white pt-2 pb-2 mb-4 ">3d Modelle</h4>
+                    <div class="row">
+                        <div class=" col-sm-6 container bg-dark rounded-lg text-white">
+                            <p>
+                                In spielen werden 3D Modelle genutzt für eine 3D Graphik. Entgegen von 2D Grafiken muss
+                                mann
+                                bei
+                                eine 3D Modellen
+                                auf vieles Achten zb. UV editing (bestimmt wie Texturen auf Modellen platziert werden),
+                                Textureing(Texture des Models), Modeling(Form des Modells)
+                                und riging (Knochen, fürs bewegen).
+                                <br>
+                                Außerdem bestimmt das Licht in einer Szene sehr das Aussehen.
+                            </p>
+                        </div>
+
+                        <div class=" col-sm-1 container "></div>
+
+                        <div class="col-sm-5 bg-dark rounded-lg p-2">
+                            <img src="imgs/Techniken/DrehendesModell.gif" class="w-100 rounded"
+                                alt="GIF Animation con 3D Modell">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-4" id="Animationen">
+                    <h4 class="bg-dark rounded text-center text-white pt-2 pb-2 mb-4 ">Animation</h4>
+                    <div class="row">
+                        <div class=" col-sm-6 container bg-dark rounded-lg text-white">
+                            <p>
+                                Damit die Figur nicht nur sta­tisch da steht braucht man Animationen.
+                                Animation sind im prinzip nur Rotations und Positions Informationen.
+                                <br>
+                                <br>
+                                Beim erstellen einer Animation muss man nicht für jedes Bild die Information speichern,
+                                sondern
+                                man muss nur bestimmte Positionen speichern der rest wird interpoliert und damit die
+                                zwischen schritte berechnet
+
+                            </p>
+                        </div>
+
+                        <div class=" col-sm-1 container "></div>
+
+                        <div class="col-sm-5 bg-dark rounded-lg p-2">
+                            <iframe src="https://www.youtube.com/embed/hkaysu1Z-N8"
+                                allowfullscreen id = "video3"></iframe>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="container mt-4" id="Knochen">
+                    <h4 class="bg-dark rounded text-center text-white pt-2 pb-2 mb-4 ">Rigging</h4>
+                    <div class="row">
+                        <div class=" col-sm-6 container bg-dark rounded-lg text-white">
+                            <p>
+                                Um jetzt die Arme und Füße zu bewegen muss man seinen Character Riggen(ihm Knochen
+                                geben,
+                                welche man dann bewegen kann).
+                            </p>
+                        </div>
+
+                        <div class=" col-sm-1 container "></div>
+
+                        <div class="col-sm-5 bg-dark rounded-lg p-2">
+                            <img src="imgs/Techniken/Rigging.gif" class="w-100 rounded"
+                                alt="Hier kommt noch so ein Video herl">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-4" id="Inverse">
+                    <h4 class="bg-dark rounded text-center text-white pt-2 pb-2 mb-4 ">Inverse Kinematiks</h4>
+                    <div class="row">
+                        <div class=" col-sm-6 container bg-dark rounded-lg text-white">
+                            <p>
+                                Inverse Kinematiks ist eine Technik mit der man die Arme eines Roboters oder 3d Models
+                                automatisch ausrichten kann siehe man Video oder Live Demo
+                                <br>
+                                <br>
+                                genauere Informationen: <a href="link">Inverse Kinematiks</a>
+                            </p>
+                        </div>
+
+                        <div class=" col-sm-1 container "></div>
+
+                        <div class="col-sm-5 bg-dark rounded-lg p-2">
+                            <div class="webgl-content" id="InverseDemo">
+                                <div id="unityContainer"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="container mt-4" id="Beispiel">
+                    <h4 class="bg-dark rounded text-center text-white pt-2 pb-2 mb-4 ">Inverse Kinematiks Beispiele</h4>
+                    <div class="row">
+                        <div class=" col-sm-6 container bg-dark rounded-lg text-white">
+                            <p>
+                                Inverse Kinematiks ist eine Technik welche schon sehr lange genutzt wird. Einige
+                                Klassiker
+                                wie Zelda breath of the wild haben es bereits genutzt. Heute findet man
+                                diese Technik in nahe zu jedem Spiel von Cyberpunk bis zu Super Smash Bros.
+                                <br>
+                                <br>
+                                rechts kann man nun einige beispiel Spiele für Inverse Kinematiks sehen.
+                            </p>
+                        </div>
+
+                        <div class=" col-sm-1 container "></div>
+
+                        <div class="col-sm-5 bg-dark rounded-lg p-2">
+                            <div id="demo" class="carousel slide" data-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <img src="imgs/Techniken/Carousel/Zelda.jpg" class="carouslBIld"
+                                            alt="Zelda Bild1">
+                                        The Legend of Zelda: Ocarina of Time(1998)
+                                        <br>
+                                        Inverse Kinematiks genutzt für die Füße
+                                        <br>
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs/Techniken/Carousel/Zelda2.png" class="carouslBIld"
+                                            alt="Zelda Bild2">
+                                        The Legend of Zelda: The Wind Waker(2002)
+                                        <br>
+                                        Inverse Kinematiks genutzt für die Füße
+                                        <br>
+
+                                    </div>
+                                    <div class="carousel-item">
+                                        <img src="imgs/Techniken/Carousel/Fpggyforest.PNG" class="carouslBIld"
+                                            alt="FoggyForest">
+                                        Foggyforest(2020)
+                                        <br>
+                                        Inverse Kinematiks genutzt um den Gegenstand zu halten
+
+                                    </div>
+                                </div>
+
+                                <a class="carousel-control-prev" href="#demo" data-slide="prev">
+                                    <span class="carousel-control-prev-icon"></span>
+                                </a>
+                                <a class="carousel-control-next" href="#demo" data-slide="next">
+                                    <span class="carousel-control-next-icon"></span>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="uebergang"></div>
+
+        </div>
+
+        <div class=" jumbotron jumbotron-fluid text-center bg-info text-light mt-5 mb-0 pt-4 pb-4">
+            <div class="row">
+                <div class=" col-sm-6 container rounded-lg text-white">
+                    <h4 class=""><i class="fas fa-copyright"></i> 2020 Fischer</h4>
+                </div>
+                <div class=" col-sm-6 container rounded-lg text-white ">
+                    <h4 class="scaleonHover" onclick="uebergang('Contact.html')">Contact me</h4>
+                </div>
+
+            </div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+        <script src="Js/SeitenUebergang.js"></script>
+        <script src="Js/Techniken.js"></script>
+
+    </div>
+</body>
+
+</html>

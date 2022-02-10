@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="Js/Tools.js"></script>
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="css/Style.css">
+
+</head>
+
+<body onresize="resize()">
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark ">
+        <a class="navbar-brand" href="#"><i class="fas fa-tools ml-2"> Tools</i></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('index.html')"><i
+                            class="fas fa-home">Home</i></button>
+                </li>
+
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Tools.html')"><i
+                            class="fas fa-tools"> Tools</i></button>
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Techniken.html')"><i
+                            class="fas fa-toolbox"> Techniken</i></button>
+
+                </li>
+                <li class="nav-item">
+                    <button type="button" class="btn btn-dark" onclick="uebergang('Game-Design.html')"><i
+                            class="fas fa-gamepad"></i> Game-Design</button>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <div class="jumbotron jumbotron-fluid text-center bg-info text-light ">
+        <div class="ueberschrift content2">
+            <h1>Tools</h1>
+        </div>
+    </div>
+
+
+
+    <div class="container-lg mt-5 content1">
+        <div class="card-deck-xl pl-10 pr-10">
+            <div class="row">
+                <div class="cardi col-md-4 ">
+                    <div class=" card tool1 toolsColor">
+                        <img class="card-img-top " src="imgs/Tools/Unity.png" alt="Card image">
+                        <div class="card-body ">
+                            <h4 class="card-title">Unity</h4>
+                            <p class="card-text cd">
+                                <a href="https://unity3d.com/de/get-unity/download" class = "a">Unity</a><br>
+                                Unity ist eine sogenannte Game-engine<br>
+                                Das ziel von Unity ist es Spiel-entwicklung so einfach wie möglich zu machen.
+                                Man kann nur mit Unity ein spiel entwickeln, da Unity alle features integrierte hat die
+                                benötigt werden wie zb. 3D Modelling Animation, rendering oder eine Scripting API.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardi  col-md-4 ">
+                    <div class=" card tool2 toolsColor">
+                        <img class="card-img-top" src="imgs/Tools/unreal.png" alt="Card image">
+                        <div class="card-body ">
+                            <h4 class="card-title">Unreal</h4>
+                            <p class="card-text cd">
+                                <a href="https://www.unrealengine.com/en-US/" class = "a">Unreal</a><br>
+                                Unreal ist eine weitere Einige. Die Engine verfolgt nicht das ziel ein all-in-one
+                                Produkt
+                                zu sein.<br>
+                                Man setzt eher daraum das sie eine Sache gut können soll.
+                               
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardi  col-md-4 ">
+                    <div class=" card tool3 toolsColor">
+                        <img class="card-img-top" src="imgs/Tools/eclipse.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Eclipse</h4>
+                            <p class="card-text cd">
+                                <a href="https://www.eclipse.org/downloads/" class = "a">Eclipse Download</a><br>
+                                Eclipse eine Java Entwicklungs umgebung. In ihr kann man java programmieren.<br>
+                                java ist zwar eher ungeeignet für spiele da man nahe zu alles von grund auf entwickeln
+                                muss.<br>
+                                Dennoch gibt es einige spiele die damit entwickelt wurden wie zb. Minecraft.
+               
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardi  col-md-4 ">
+                    <div class=" card tool4 toolsColor">
+                        <img class="card-img-top" src="imgs/Tools/Visual_Studio.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Visual Studio</h4>
+                            <p class="card-text cd">
+                                <a href="https://visualstudio.microsoft.com/de/" class = "a">Visual Studio</a><br>
+                                Visual Studio ist eine Entwicklungsumgebung für c#. VS ist die Standard IDE von Unity.
+                     
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardi  col-md-4 ">
+                    <div class=" card tool5 toolsColor">
+                        <img class="card-img-top" src="imgs/Tools/VisualStudiocode.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Visual Studio Code</h4>
+                            <p class="card-text cd">
+                                <a href="https://code.visualstudio.com/" class = "a">Visual Studio Code</a><br>
+                                Visual Studio Code ist ein sehr vielfältiges Programm. Es kann für verschiedene
+                                Programmiersprachen als IDE genutzt werden wie
+                                zb. Java Python Javascript...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cardi  col-md-4 ">
+                    <div class=" card tool6 toolsColor">
+                        <img class="card-img-top" src="imgs/Tools/1200px-Blender_logo_no_text.svg.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Blender</h4>
+                            <p class="card-text cd">
+                                <a href="https://www.blender.org/" class = "a">Blender</a><br>
+                                Blender ist ein 3D modellierungs Programm. In ihm kann man 3D Modelle für spiele
+                                erstellen.
+                                Außerdem kann man Texturen light maps und shader in ihm erstellen
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cardi  col-md-4 ">
+                    <div class=" card tool7 toolsColor">
+                        <img class="card-img-top" src="imgs/Tools/photoShop.png" alt="Card image">
+                        <div class="card-body">
+                            <h4 class="card-title">Eclipse</h4>
+                            <p class="card-text cd">
+                                <a
+                                    href="https://www.adobe.com/at/products/photoshop.html?sdid=88X75SKW&mv=search&ef_id=Cj0KCQiAoab_BRCxARIsANMx4S5cNgcG2CqxbC3BZrZ0dHi4sFim0m2d2gw9OxwYIiXgiWNt6hMQSkYaAodxEALw_wcB:G:s&s_kwcid=AL!3085!3!442191693303!b!!g!!%2Bphotoshop%20%2Bprogramme!1427664696!60117867550&gclid=Cj0KCQiAoab_BRCxARIsANMx4S5cNgcG2CqxbC3BZrZ0dHi4sFim0m2d2gw9OxwYIiXgiWNt6hMQSkYaAodxEALw_wcB" class = "a">PhotoShop</a><br>
+                                PhotoShop ist ein Programm mit dem man Sprites und andere Bilder erstellen kann, für
+                                Spiele
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <div class=" jumbotron jumbotron-fluid text-center bg-info text-light mt-5 mb-0 pt-4 pb-4">
+        <div class="row">
+            <div class=" col-sm-6 container rounded-lg text-white">
+                <h4 class=""><i class="fas fa-copyright"></i> 2020 Fischer</h4>
+            </div>
+            <div class=" col-sm-6 container rounded-lg text-white ">
+                 <h4 class = "scaleonHover" onclick="uebergang('Contact.html')">Contact me</h4>
+            </div>
+
+        </div>
+    </div>
+
+    <button type="button" class="btn btn-primary" id="myBtn">Show Toast</button>
+    <div class="toast">
+      <div class="toast-header">
+        Toast Header
+      </div>
+      <div class="toast-body">
+        Some text inside the toast body
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+    <script src="Js/SeitenUebergang.js"></script>
+</body>
+
+</html>
